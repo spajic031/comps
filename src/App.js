@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import AccordionPage from "./components/pages/AccordionPage";
+import ButtonPage from "./components/pages/ButtonPage";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <div className="w-1/2">
+        <ButtonPage />
+      </div>
+      <div className="w-1/2">
+        <AccordionPage />
+      </div>
     </div>
   );
 }

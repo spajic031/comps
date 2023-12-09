@@ -1,16 +1,12 @@
-import AccordionPage from "./components/pages/AccordionPage";
-import ButtonPage from "./components/pages/ButtonPage";
+import Dropdown from "./components/pages/Dropdown";
 function App() {
-  return (
-    <div className="flex">
-      <div className="w-1/2">
-        <ButtonPage />
-      </div>
-      <div className="w-1/2">
-        <AccordionPage />
-      </div>
-    </div>
-  );
+  const options = [
+    { label: "Red", value: "red" },
+    { label: "Green", value: "green" },
+    { label: "Blue", value: "blue" },
+  ];
+
+  return <Dropdown options={options} />;
 }
 
 export default App;

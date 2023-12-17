@@ -1,7 +1,7 @@
 import SideBar from "./components/SideBar";
-import AccordionPage from "./components/pages/AccordionPage";
-import ButtonPage from "./components/pages/ButtonPage";
-import DropdownPage from "./components/pages/DropdownPage";
+import AccordionPage from "./pages/AccordionPage";
+import ButtonPage from "./pages/ButtonPage";
+import DropdownPage from "./pages/DropdownPage";
 
 function App() {
   return (

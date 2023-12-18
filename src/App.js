@@ -1,18 +1,21 @@
-import SideBar from "./components/SideBar";
+import Link from "./components/Link";
+import Route from "./components/Route";
 import AccordionPage from "./pages/AccordionPage";
-import ButtonPage from "./pages/ButtonPage";
 import DropdownPage from "./pages/DropdownPage";
 
 function App() {
   return (
-    <div className="flex">
+    <div>
+      <Link to="/accordion">Go to accordion</Link>
+      <br />
+      <Link to="/dropdown">Go to dropdown</Link>
       <div>
-        <SideBar />
-      </div>
-      <div>
-        <AccordionPage />
-        <ButtonPage />
-        <DropdownPage />
+        <Route path="/accordion">
+          <AccordionPage />
+        </Route>
+        <Route path="/dropdown">
+          <DropdownPage />
+        </Route>
       </div>
     </div>
   );

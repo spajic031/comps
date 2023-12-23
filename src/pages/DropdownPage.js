@@ -6,6 +6,7 @@ function DropdownPage() {
     setSelected(option);
   };
   const options = [
+    { label: "White", value: "white" },
     { label: "Red", value: "red" },
     { label: "Green", value: "green" },
     { label: "Blue", value: "blue" },
